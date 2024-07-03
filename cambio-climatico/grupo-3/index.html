@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Action</title>
+    <title>Cambio Climático</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
-            height: 100px;
-            font-family: Arial, sans-serif;
+            height: 100%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'sans-serif';
+           
         }
 
         .background-image {
@@ -18,16 +20,16 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 230%;
-            background-image: url('ei.png');
+            height: 250%;
+            background-image: url('helado.svg');
             background-size: cover;
             background-position: center;
             z-index: -1;
-            opacity: 1;
+            opacity: 0.8;
         }
 
         .container {
-            position: relative;
+            position: absolute;
             z-index: 1;
             display: flex;
             flex-direction: column;
@@ -36,19 +38,22 @@
             height: 100%;
             color: white;
             text-align: center;
-            top: 1010px;
-            font-weight: bold;
+            width: 600px;
+            left: calc(50% - 300px);
+            top: 900px;
 
         }
 
         header {
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            font-size: 4.5em;
+            margin-bottom: 30px;
+            font-weight: bold;
         }
 
         main {
             font-size: 1.5em;
             margin-bottom: 40px;
+
         }
 
         footer {
@@ -59,18 +64,17 @@
         .button {
             padding: 15px 25px;
             font-size: 1em;
-            color: #318CE7;
-            background-color: #ffffff;
+            color: white;
+            background-color: #4275ac;
             border: none;
-            border-radius: 5px;
+            border-radius: 35px;
             cursor: pointer;
             text-decoration: none;
             font-weight: bold;
         }
 
         .button:hover {
-            background-color: #318CE7;
-            color: #FFFFFF;
+            background-color: #67affd;
         }
     </style>
 </head>
@@ -78,12 +82,15 @@
     <div class="background-image"></div>
     <div class="container">
         <header>
-            UNA ACCION CLIMATICA
+            Bienvenido al primer paso para cambiar al mundo.
         </header>
         <main>
-            <p>Buscamos que gracias a esta informacion logren concientizarse sobre el tema de la contamicacion</p>
-            <a href="https://www.fundacionaquae.org/agua-y-contaminacion/" class="button">ACCION CLIMATICA</a>
+            <p>Únete a la lucha contra el cambio climático: juntos podemos crear un futuro sostenible y marcar la diferencia.</p>
+            <a href="https://ciencia.nasa.gov/cambio-climatico/evidencia/" class="button">Ver Más</a>
         </main>
+        <footer>
+            Hecho por Joan García y Vicente Sutil.
+        </footer>
     </div>
 </body>
 </html>
