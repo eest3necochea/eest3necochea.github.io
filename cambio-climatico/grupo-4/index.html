@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 101%;
+            height: 115%;
+            background-image: url('grafiti.png');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+	    color: black;
+        }
+
+        main {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+	    color: black;
+        }
+
+        footer {
+            font-size: 1em;
+            margin-top: 20px;
+	    color: black;
+        }
+
+        .button {
+            padding: 15px 25px;
+            font-size: 1em;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <header>
+            Bienvenido a Nuestra Página
+        </header>
+        <main>
+            <p>Descubre todo lo que tenemos para ofrecerte.</p>
+            <a href="https://science.nasa.gov/climate-change/" class="button">Más Información</a>
+        </main>
+        <footer>
+            © 2024 Agnetha Rodriguez. Todos los derechos reservados.
+        </footer>
+    </div>
+</body>
+</html>
