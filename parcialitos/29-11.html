@@ -86,7 +86,7 @@
       <h1 class="titulo">
         🎓 Desaprobados: <span id="desaprobados"></span> % 📚
       </h1>
-      <h1 class="titulo">🎓 Ausentes: <span id="ausentes"></span> % 📚</h1>
+      <h1 class="titulo">🎓 Ausentes: <span id="ausentes"></span> 📚</h1>
       <h1 class="titulo">🎓 Total: <span id="total"></span> 📚</h1>
     </div>
 
@@ -288,15 +288,15 @@
           ausentes++;
         }
       });
+
+      var presentes = total - ausentes;
       document.getElementById("aprobados").innerText = parseFloat(
-        (aprobados / total) * 100
+        (aprobados / presentes) * 100
       ).toFixed(2);
       document.getElementById("desaprobados").innerText = parseFloat(
-        (desaprobados / total) * 100
+        (desaprobados / presentes) * 100
       ).toFixed(2);
-      document.getElementById("ausentes").innerText = parseFloat(
-        (ausentes / total) * 100
-      ).toFixed(2);
+      document.getElementById("ausentes").innerText = ausentes;
       document.getElementById("total").innerText = total.toString();
     </script>
   </body>
